@@ -3,9 +3,8 @@
 - An app that uses Firebase Firestore database to manage a multi-user chat room
 - Using UIKit with SwiftUI for navigation and UI
 
-<p align="center"> 
-
-<img src="https://github.com/fesvieira/FeChatUIKit/assets/65823376/a7b44bd4-870d-461c-a3bd-f306a49a5e91"/>
-<img src="https://github.com/fesvieira/FeChatUIKit/assets/65823376/81e773ad-69b0-4bcd-8590-25939dbbd45f"/>
-
+<p align="center">
+  <img src="https://github.com/fesvieira/FeChat/assets/65823376/867a43f3-be6f-4f2b-84e5-72e6f8041fe3" width="200" height="500" />
+  <img src="https://github.com/fesvieira/FeChat/assets/65823376/8f7dff2a-4fd2-411b-996b-520b66a57192"  width="200" height="500" />
 </p>
+
