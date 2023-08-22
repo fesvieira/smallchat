@@ -1,4 +1,4 @@
-# FeChatUIKit
+# FeChat
 
 - An app that uses Firebase Firestore database to manage a multi-user chat room
 - Using UIKit with SwiftUI for navigation and UI
