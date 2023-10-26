@@ -24,7 +24,13 @@ struct StartView: View {
     }
     var body: some View {
         VStack {
-            Image(Assets.AppIcon.name)
+            Image(Asset.MainIcon.name, bundle: nil)
+                .renderingMode(.original)
+                .resizable()
+                .clipShape(RoundedRectangle(cornerSize: CGSize(width: 20, height: 10)))
+                .frame(maxWidth: 200, maxHeight: 200)
+                .background(Circle().fill(.lavenderWhite))
+                .padding()
             
             FormsTextField(text: $email, placeholder: "Email")
                 .textContentType(.emailAddress)

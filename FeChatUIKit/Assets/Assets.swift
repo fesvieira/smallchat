@@ -7,13 +7,18 @@
 
 import Foundation
 
-enum Assets {
+enum Asset: String {
+    
     case AppIcon
+    case MainIcon
     
     var name: String {
         switch self {
         case .AppIcon:
             return "AppIcon"
+            
+        case .MainIcon:
+            return "MainIcon"
         }
-    }
+    }    
 }

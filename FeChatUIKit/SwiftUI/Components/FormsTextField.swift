@@ -96,7 +96,6 @@ struct FormsTextField_Previews: PreviewProvider {
             }
             .padding(.horizontal, 16)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(.raisinBlack)
         }
     }
     static var previews: some View {

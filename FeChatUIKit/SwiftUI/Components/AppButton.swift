@@ -36,10 +36,10 @@ struct AppButton: View {
             label: {
                 Text(text)
                     .font(.system(size: 16, weight: .bold))
-                    .foregroundColor(style == .filled ? .white : .ultraViolet)
+                    .foregroundColor(style == .filled ? .raisinBlack : .lightUltraViolet)
                     .padding(.vertical, 14)
                     .frame(maxWidth: .infinity)
-                    .background(style == .filled ? .ultraViolet : .clear)
+                    .background(style == .filled ? .lightUltraViolet : .clear)
                     .clipShape(RoundedRectangle(cornerRadius: 32))
                     .overlay {
                         RoundedRectangle(cornerRadius: 32).stroke(style == .filled ? .clear : .ultraViolet, lineWidth: 2)
@@ -59,11 +59,23 @@ struct ScaleButtonStyle: ButtonStyle {
 
 struct AppButton_Previews: PreviewProvider {
     static var previews: some View {
-        AppButton(
-            text: "Button",
-            style: .empty,
-            action: {}
-        )
-        .padding(.horizontal)
+        VStack{
+            AppButton(
+                text: "Button",
+                style: .empty,
+                action: {}
+            )
+            .padding(.horizontal)
+            
+            AppButton(
+                text: "Button",
+                style: .filled,
+                action: {}
+            )
+            .padding(.horizontal)
+        }
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.raisinBlack)
+        
     }
 }
