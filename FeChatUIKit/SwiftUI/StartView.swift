@@ -24,6 +24,8 @@ struct StartView: View {
     }
     var body: some View {
         VStack {
+            Image(Assets.AppIcon.name)
+            
             FormsTextField(text: $email, placeholder: "Email")
                 .textContentType(.emailAddress)
                 .textInputAutocapitalization(.never)

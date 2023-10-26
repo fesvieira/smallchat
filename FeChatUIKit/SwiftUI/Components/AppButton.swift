@@ -7,19 +7,19 @@
 
 import SwiftUI
 
-enum ButtonStyle {
+enum AppButtonStyle {
     case filled
     case empty
 }
 
 struct AppButton: View {
     private let text: String
-    private let style: ButtonStyle
+    private let style: AppButtonStyle
     private let action: () -> Void
     
     init(
         text: String,
-        style: ButtonStyle = .filled,
+        style: AppButtonStyle = .filled,
         action: @escaping () -> Void
     ) {
         self.text = text
@@ -28,19 +28,32 @@ struct AppButton: View {
     }
     
     var body: some View {
-        Text(text)
-            .font(.system(size: 16, weight: .bold))
-            .foregroundColor(style == .filled ? .raisinBlack : .ultraViolet)
-            .padding(.vertical, 14)
-            .frame(maxWidth: .infinity)
-            .background(style == .filled ? .ultraViolet : .clear)
-            .clipShape(RoundedRectangle(cornerRadius: 32))
-            .overlay {
-                RoundedRectangle(cornerRadius: 32).stroke(style == .filled ? .clear : .ultraViolet, lineWidth: 2)
-            }
-            .onTapGesture {
+        
+        Button(
+            action: {
                 action()
+            },
+            label: {
+                Text(text)
+                    .font(.system(size: 16, weight: .bold))
+                    .foregroundColor(style == .filled ? .white : .ultraViolet)
+                    .padding(.vertical, 14)
+                    .frame(maxWidth: .infinity)
+                    .background(style == .filled ? .ultraViolet : .clear)
+                    .clipShape(RoundedRectangle(cornerRadius: 32))
+                    .overlay {
+                        RoundedRectangle(cornerRadius: 32).stroke(style == .filled ? .clear : .ultraViolet, lineWidth: 2)
+                    }
             }
+        )
+        .buttonStyle(ScaleButtonStyle())
+    }
+}
+
+struct ScaleButtonStyle: ButtonStyle {
+    func makeBody(configuration: Self.Configuration) -> some View {
+        configuration.label
+            .scaleEffect(configuration.isPressed ? 1.05 : 1)
     }
 }
 

@@ -25,6 +25,7 @@
 		116A095B29FCD3320045320D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 116A095A29FCD3320045320D /* FirebaseFirestore */; };
 		116A095D29FCD7620045320D /* UIViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A095C29FCD7620045320D /* UIViewController+Utility.swift */; };
 		116A096129FCDAAA0045320D /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A096029FCDAAA0045320D /* StartView.swift */; };
+		118781F32AEAF22500E83EB1 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118781F22AEAF22500E83EB1 /* Assets.swift */; };
 		1192B0432A144CEE00BAC094 /* Message+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192B0422A144CEE00BAC094 /* Message+Additions.swift */; };
 		1192B0452A144F5600BAC094 /* MessageShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192B0442A144F5600BAC094 /* MessageShape.swift */; };
 		11AD8D492A08917600D9FF46 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD8D482A08917600D9FF46 /* AppButton.swift */; };
@@ -49,6 +50,7 @@
 		116A095329FCD2C50045320D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		116A095C29FCD7620045320D /* UIViewController+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Utility.swift"; sourceTree = "<group>"; };
 		116A096029FCDAAA0045320D /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		118781F22AEAF22500E83EB1 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		1192B0422A144CEE00BAC094 /* Message+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Message+Additions.swift"; sourceTree = "<group>"; };
 		1192B0442A144F5600BAC094 /* MessageShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageShape.swift; sourceTree = "<group>"; };
 		11AD8D482A08917600D9FF46 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				116A094829FCCFC40045320D /* Assets.xcassets */,
+				118781F22AEAF22500E83EB1 /* Assets.swift */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 				11601C8F2A10A48500AD39A6 /* ChatView.swift in Sources */,
 				116A094029FCCFC30045320D /* AppDelegate.swift in Sources */,
 				116A095D29FCD7620045320D /* UIViewController+Utility.swift in Sources */,
+				118781F32AEAF22500E83EB1 /* Assets.swift in Sources */,
 				116A094229FCCFC30045320D /* SceneDelegate.swift in Sources */,
 				11C790172A11188200A6E219 /* Message.swift in Sources */,
 				11AD8D492A08917600D9FF46 /* AppButton.swift in Sources */,
