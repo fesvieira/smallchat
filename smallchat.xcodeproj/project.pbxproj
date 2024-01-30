@@ -39,7 +39,7 @@
 		1146C2F02A09D457003C5EC6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		11601C8E2A10A48500AD39A6 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 		11601C902A10A52F00AD39A6 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
-		116A093C29FCCFC30045320D /* FeChatUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FeChatUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		116A093C29FCCFC30045320D /* smallchat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = smallchat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		116A093F29FCCFC30045320D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		116A094129FCCFC30045320D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		116A094329FCCFC30045320D /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
@@ -124,7 +124,7 @@
 		116A093D29FCCFC30045320D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				116A093C29FCCFC30045320D /* FeChatUIKit.app */,
+				116A093C29FCCFC30045320D /* smallchat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -166,9 +166,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		116A093B29FCCFC30045320D /* FeChatUIKit */ = {
+		116A093B29FCCFC30045320D /* smallchat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 116A095029FCCFC40045320D /* Build configuration list for PBXNativeTarget "FeChatUIKit" */;
+			buildConfigurationList = 116A095029FCCFC40045320D /* Build configuration list for PBXNativeTarget "smallchat" */;
 			buildPhases = (
 				116A093829FCCFC30045320D /* Sources */,
 				116A093929FCCFC30045320D /* Frameworks */,
@@ -178,14 +178,14 @@
 			);
 			dependencies = (
 			);
-			name = FeChatUIKit;
+			name = smallchat;
 			packageProductDependencies = (
 				116A095629FCD3320045320D /* FirebaseAuth */,
 				116A095829FCD3320045320D /* FirebaseDatabase */,
 				116A095A29FCD3320045320D /* FirebaseFirestore */,
 			);
 			productName = FeChatUIKit;
-			productReference = 116A093C29FCCFC30045320D /* FeChatUIKit.app */;
+			productReference = 116A093C29FCCFC30045320D /* smallchat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -219,7 +219,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				116A093B29FCCFC30045320D /* FeChatUIKit */,
+				116A093B29FCCFC30045320D /* smallchat */,
 			);
 		};
 /* End PBXProject section */
@@ -466,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		116A095029FCCFC40045320D /* Build configuration list for PBXNativeTarget "FeChatUIKit" */ = {
+		116A095029FCCFC40045320D /* Build configuration list for PBXNativeTarget "smallchat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				116A095129FCCFC40045320D /* Debug */,
