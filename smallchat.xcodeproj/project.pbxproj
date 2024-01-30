@@ -116,7 +116,7 @@
 		116A093329FCCFC30045320D = {
 			isa = PBXGroup;
 			children = (
-				116A093E29FCCFC30045320D /* FeChatUIKit */,
+				116A093E29FCCFC30045320D /* smallchat */,
 				116A093D29FCCFC30045320D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,7 +129,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		116A093E29FCCFC30045320D /* FeChatUIKit */ = {
+		116A093E29FCCFC30045320D /* smallchat */ = {
 			isa = PBXGroup;
 			children = (
 				116A094D29FCCFC40045320D /* Info.plist */,
@@ -142,7 +142,7 @@
 				1151EBA429FD4E6B0093801F /* SwiftUI */,
 				1151EBA729FD4EC70093801F /* Assets */,
 			);
-			path = FeChatUIKit;
+			path = smallchat;
 			sourceTree = "<group>";
 		};
 		11AD8D472A08916000D9FF46 /* Components */ = {
@@ -203,7 +203,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 116A093729FCCFC30045320D /* Build configuration list for PBXProject "FeChatUIKit" */;
+			buildConfigurationList = 116A093729FCCFC30045320D /* Build configuration list for PBXProject "smallchat" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -418,7 +418,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fesvieira.FeChatUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fesvieira.smallchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -446,7 +446,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.fesvieira.FeChatUIKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fesvieira.smallchat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -457,7 +457,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		116A093729FCCFC30045320D /* Build configuration list for PBXProject "FeChatUIKit" */ = {
+		116A093729FCCFC30045320D /* Build configuration list for PBXProject "smallchat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				116A094E29FCCFC40045320D /* Debug */,
