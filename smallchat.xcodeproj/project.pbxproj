@@ -24,12 +24,18 @@
 		116A095B29FCD3320045320D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 116A095A29FCD3320045320D /* FirebaseFirestore */; };
 		116A095D29FCD7620045320D /* UIViewController+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A095C29FCD7620045320D /* UIViewController+Utility.swift */; };
 		116A096129FCDAAA0045320D /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116A096029FCDAAA0045320D /* StartView.swift */; };
+		1174B7112B72F5CA004EF524 /* XCoordinator in Frameworks */ = {isa = PBXBuildFile; productRef = 1174B7102B72F5CA004EF524 /* XCoordinator */; };
+		1174B7132B72F5CA004EF524 /* XCoordinatorCombine in Frameworks */ = {isa = PBXBuildFile; productRef = 1174B7122B72F5CA004EF524 /* XCoordinatorCombine */; };
+		1174B7152B72F5CA004EF524 /* XCoordinatorRx in Frameworks */ = {isa = PBXBuildFile; productRef = 1174B7142B72F5CA004EF524 /* XCoordinatorRx */; };
 		118781F32AEAF22500E83EB1 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118781F22AEAF22500E83EB1 /* Assets.swift */; };
 		1192B0432A144CEE00BAC094 /* Message+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192B0422A144CEE00BAC094 /* Message+Additions.swift */; };
 		1192B0452A144F5600BAC094 /* MessageShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1192B0442A144F5600BAC094 /* MessageShape.swift */; };
 		11AD8D492A08917600D9FF46 /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AD8D482A08917600D9FF46 /* AppButton.swift */; };
 		11BC386E2B694E78008483B2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 11BC386D2B694E78008483B2 /* GoogleService-Info.plist */; };
 		11C790172A11188200A6E219 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11C790162A11188200A6E219 /* Message.swift */; };
+		11DBA5902B72F70200046C00 /* AppRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBA58F2B72F70200046C00 /* AppRoute.swift */; };
+		11DBA5922B72F74900046C00 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBA5912B72F74900046C00 /* AppCoordinator.swift */; };
+		11DBA5952B72F97B00046C00 /* UIVIew+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11DBA5942B72F97B00046C00 /* UIVIew+Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +61,9 @@
 		11AD8D482A08917600D9FF46 /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
 		11BC386D2B694E78008483B2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		11C790162A11188200A6E219 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		11DBA58F2B72F70200046C00 /* AppRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRoute.swift; sourceTree = "<group>"; };
+		11DBA5912B72F74900046C00 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		11DBA5942B72F97B00046C00 /* UIVIew+Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+Utility.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1174B7132B72F5CA004EF524 /* XCoordinatorCombine in Frameworks */,
+				1174B7112B72F5CA004EF524 /* XCoordinator in Frameworks */,
+				1174B7152B72F5CA004EF524 /* XCoordinatorRx in Frameworks */,
 				116A095929FCD3320045320D /* FirebaseDatabase in Frameworks */,
 				116A095729FCD3320045320D /* FirebaseAuth in Frameworks */,
 				116A095B29FCD3320045320D /* FirebaseFirestore in Frameworks */,
@@ -89,6 +101,7 @@
 				113BC55D2A02821500C38C45 /* Colors.swift */,
 				1146C2EE2A09D33B003C5EC6 /* Constants.swift */,
 				1192B0422A144CEE00BAC094 /* Message+Additions.swift */,
+				11DBA5942B72F97B00046C00 /* UIVIew+Utility.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -121,15 +134,17 @@
 		116A093E29FCCFC30045320D /* smallchat */ = {
 			isa = PBXGroup;
 			children = (
-				11BC386D2B694E78008483B2 /* GoogleService-Info.plist */,
-				116A094D29FCCFC40045320D /* Info.plist */,
-				116A093F29FCCFC30045320D /* AppDelegate.swift */,
-				116A094129FCCFC30045320D /* SceneDelegate.swift */,
+				11DBA58E2B72F6C800046C00 /* AppNavigation */,
 				11C790152A11186900A6E219 /* Models */,
 				1151EBA629FD4EBB0093801F /* Helpers */,
 				1151EBA429FD4E6B0093801F /* Views */,
 				1174B70C2B72F3D8004EF524 /* Storyboard */,
 				1151EBA729FD4EC70093801F /* Assets */,
+				1174B70C2B72F3D8004EF524 /* Storyboard */,
+				116A093F29FCCFC30045320D /* AppDelegate.swift */,
+				116A094129FCCFC30045320D /* SceneDelegate.swift */,
+				11BC386D2B694E78008483B2 /* GoogleService-Info.plist */,
+				116A094D29FCCFC40045320D /* Info.plist */,
 			);
 			path = smallchat;
 			sourceTree = "<group>";
@@ -179,6 +194,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		11DBA58E2B72F6C800046C00 /* AppNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				11DBA58F2B72F70200046C00 /* AppRoute.swift */,
+				11DBA5912B72F74900046C00 /* AppCoordinator.swift */,
+			);
+			path = AppNavigation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -199,6 +223,9 @@
 				116A095629FCD3320045320D /* FirebaseAuth */,
 				116A095829FCD3320045320D /* FirebaseDatabase */,
 				116A095A29FCD3320045320D /* FirebaseFirestore */,
+				1174B7102B72F5CA004EF524 /* XCoordinator */,
+				1174B7122B72F5CA004EF524 /* XCoordinatorCombine */,
+				1174B7142B72F5CA004EF524 /* XCoordinatorRx */,
 			);
 			productName = FeChatUIKit;
 			productReference = 116A093C29FCCFC30045320D /* smallchat.app */;
@@ -230,6 +257,7 @@
 			mainGroup = 116A093329FCCFC30045320D;
 			packageReferences = (
 				116A095529FCD3320045320D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				1174B70F2B72F5CA004EF524 /* XCRemoteSwiftPackageReference "XCoordinator" */,
 			);
 			productRefGroup = 116A093D29FCCFC30045320D /* Products */;
 			projectDirPath = "";
@@ -265,7 +293,10 @@
 				113BC55E2A02821500C38C45 /* Colors.swift in Sources */,
 				1192B0432A144CEE00BAC094 /* Message+Additions.swift in Sources */,
 				116A096129FCDAAA0045320D /* StartView.swift in Sources */,
+				11DBA5922B72F74900046C00 /* AppCoordinator.swift in Sources */,
+				11DBA5902B72F70200046C00 /* AppRoute.swift in Sources */,
 				1146B9F72A0493B800098BF3 /* FormsTextField.swift in Sources */,
+				11DBA5952B72F97B00046C00 /* UIVIew+Utility.swift in Sources */,
 				11601C8F2A10A48500AD39A6 /* ChatView.swift in Sources */,
 				116A094029FCCFC30045320D /* AppDelegate.swift in Sources */,
 				116A095D29FCD7620045320D /* UIViewController+Utility.swift in Sources */,
@@ -502,6 +533,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		1174B70F2B72F5CA004EF524 /* XCRemoteSwiftPackageReference "XCoordinator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/QuickBirdEng/XCoordinator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.2.1;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -519,6 +558,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 116A095529FCD3320045320D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		1174B7102B72F5CA004EF524 /* XCoordinator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1174B70F2B72F5CA004EF524 /* XCRemoteSwiftPackageReference "XCoordinator" */;
+			productName = XCoordinator;
+		};
+		1174B7122B72F5CA004EF524 /* XCoordinatorCombine */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1174B70F2B72F5CA004EF524 /* XCRemoteSwiftPackageReference "XCoordinator" */;
+			productName = XCoordinatorCombine;
+		};
+		1174B7142B72F5CA004EF524 /* XCoordinatorRx */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1174B70F2B72F5CA004EF524 /* XCRemoteSwiftPackageReference "XCoordinator" */;
+			productName = XCoordinatorRx;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

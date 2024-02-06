@@ -12,8 +12,12 @@ import FirebaseAuth
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    let window: UIWindow! = UIWindow()
+    let router = AppCoordinator().strongRouter
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
+        router.setRoot(for: window)
         return true
     }
 
